@@ -1,0 +1,36 @@
+{
+  "name": "react_vite_ts_fsd",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "workspaces": [
+    "src",
+    "server"
+  ],
+  "scripts": {
+    "dev": "vite --config ./config/vite.config.ts",
+    "build": "../node_modules/.bin/tsc -b && vite build",
+    "lint": "../node_modules/.bin/eslint .",
+    "format": "../node_modules/.bin/prettier --write .",
+    "preview": "../node_modules/.bin/vite preview",
+    "decor": " npm run format && npm run lint"
+  },
+  "dependencies": {
+    "@types/lodash.merge": "^4.6.9",
+    "dotenv": "^16.4.7",
+    "lodash.merge": "^4.6.2",
+    "prettier": "^3.5.1"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^8.26.1",
+    "eslint": "^9.20.1",
+    "eslint-config-google": "^0.14.0",
+    "eslint-config-prettier": "^10.1.1",
+    "eslint-plugin-prettier": "^5.2.3",
+    "eslint-plugin-react-hooks": "^5.0.0",
+    "eslint-plugin-react-refresh": "^0.4.18",
+    "globals": "^15.14.0",
+    "typescript": "~5.7.2",
+    "typescript-eslint": "^8.22.0"
+  }
+}

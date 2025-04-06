@@ -1,0 +1,33 @@
+{
+  "name": "frontend",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "npm run build:frontend": "vite build"
+  },
+  "dependencies": {
+    "@types/bootstrap": "^5.2.10",
+    "@types/dotenv": "^6.1.1",
+    "@types/react-bootstrap": "^0.32.37",
+    "@types/react-router": "^5.1.20",
+    "@types/react-transition-group": "^4.4.12",
+    "@types/redux": "^3.6.31",
+    "bootstrap": "^5.3.3",
+    "react": "^19.0.0",
+    "react-bootstrap": "^2.10.9",
+    "react-dom": "^19.0.0",
+    "react-router": "^7.2.0",
+    "react-transition-group": "^4.4.5",
+    "redux": "^5.0.1",
+    "redux-toolkit": "^1.1.2"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.19.0",
+    "@types/react": "^19.0.8",
+    "@types/react-dom": "^19.0.3",
+    "@vitejs/plugin-react": "^4.3.4",
+    "sass-embedded": "^1.85.1",
+    "vite": "^6.1.0"
+  }
+}
