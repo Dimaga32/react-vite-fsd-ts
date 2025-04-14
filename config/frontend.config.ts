@@ -1,6 +1,7 @@
 import react from "@vitejs/plugin-react";
 import dotenv from "dotenv";
 import path from "path";
+import tailwindcss from '@tailwindcss/vite'
 dotenv.config({ path: path.resolve(process.cwd(),"config", ".dev.env") });
 
 export const frontEndConfig={
@@ -15,5 +16,5 @@ export const frontEndConfig={
             },
         },
     },
-    plugins: [react()],
+    plugins: [react(),tailwindcss()],
 }
