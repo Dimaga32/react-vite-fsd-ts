@@ -7,7 +7,7 @@ export default function ErrorContent(): JSX.Element {
   return (
     <div className={classes.mainBlock}>
       <Header />
-      <h1 className={`text-center h1 ` + classes.contentBlock}> Error</h1>
+      <h1 className={`text-6xl text font-bold ` + classes.contentBlock}> Error</h1>
       <Footer />
     </div>
   );
