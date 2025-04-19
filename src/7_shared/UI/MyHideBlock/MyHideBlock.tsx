@@ -1,33 +1,48 @@
-import { useEffect, useState, ReactNode, JSX} from 'react';
+import { useCallback, useEffect, useState, ReactNode, JSX} from 'react';
 import { registerToggle, unregisterToggle } from './VisibilityRegistry';
 import classes from "./myhideblock.module.scss";
+import MyBurgerButtonInner from "./MyBurgerButton";
+import { TypeBrakepoint} from "../Brakepoints";
+import {useBreakpointMatch} from "../../hooks/useMediaQuery";
+
 
 interface MyHideBlockContentProps {
     id: string;
     children: ReactNode;
     className?: string;
+    dataFoldingSize?: TypeBrakepoint;
 }
-export default function MyHideBlockContent(
+
+function MyHideBlockContent(
     props:MyHideBlockContentProps):JSX.Element {
-    const [isVisible, setIsVisible] = useState<boolean>(true);
 
-    const toggleVisibility = () => {
-        setIsVisible((prev) => !prev);
-    };
+    const { id, children, className, dataFoldingSize}=props
+    const isWide:boolean = useBreakpointMatch(dataFoldingSize)
 
-    const { id, children, className }=props
+    const [isActive, setIsActive] = useState<boolean>(true);
+
+
+    const toggleVisibility = useCallback(() => {
+        setIsActive((prev) => !prev)
+    }, [])
 
     useEffect(() => {
         registerToggle(id, toggleVisibility);
         return () => {
             unregisterToggle(id);
         };
-    }, [id]);
-
-    return (
+    }, [id, toggleVisibility]);
+    return (isActive||isWide)?(
         <div className={`my-component ${classes.hideblock} ${className}`}>
-            {isVisible && <div className="my-component-content">{children}</div>}
+             {children}
         </div>
-    );
+    ):<></>
 }
+
+interface InterfaceMyHideBlockContentProps extends React.FC<MyHideBlockContentProps> {
+    BurgerButton: typeof MyBurgerButtonInner;
+}
+
+(MyHideBlockContent as InterfaceMyHideBlockContentProps).BurgerButton = MyBurgerButtonInner;
+export default MyHideBlockContent as InterfaceMyHideBlockContentProps;
 
