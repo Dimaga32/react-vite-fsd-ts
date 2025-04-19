@@ -1,9 +1,11 @@
 {
   "files": [],
   "compilerOptions": {
-    "esModuleInterop": true,
+    "esModuleInterop": true
   },
-  "include": ["/src","/server"],
+  "include": [
+    "/template/src",
+    "/server"],
   "references": [
     { "path": "./config/tsconfig.app.json"},
     { "path": "./config/tsconfig.node.json"}
