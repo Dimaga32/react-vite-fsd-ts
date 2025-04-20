@@ -19,7 +19,7 @@ function MyHideBlockContent(
     const { id, children, className, dataFoldingSize}=props
     const isWide:boolean = useBreakpointMatch(dataFoldingSize)
 
-    const [isActive, setIsActive] = useState<boolean>(true);
+    const [isActive, setIsActive] = useState<boolean>(false);
 
 
     const toggleVisibility = useCallback(() => {
