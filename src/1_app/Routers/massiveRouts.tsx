@@ -1,12 +1,12 @@
-import { JSX } from "react";
-import Main from "../../2_pages/main";
-import Error from "../../2_pages/error";
-import Books from "../../2_pages/books";
-import { Navigate } from "react-router";
+import { JSX } from "react"
+import Main from "../../2_pages/main"
+import Error from "../../2_pages/error"
+import Books from "../../2_pages/books"
+import { Navigate } from "react-router"
 type TypeRout = {
-  url: string;
-  element: JSX.Element;
-};
+  url: string
+  element: JSX.Element
+}
 export const MassiveRouts: TypeRout[] = [
   {
     url: "/error",
@@ -24,4 +24,4 @@ export const MassiveRouts: TypeRout[] = [
     url: "*",
     element: <Navigate to={"/error"} replace />,
   },
-];
+]

@@ -1,7 +1,7 @@
-import dotenv from "dotenv";
-import path from "path";
-dotenv.config({ path: path.resolve(process.cwd(),"config", ".dev.env") });
-export const serverConfig={
+import dotenv from "dotenv"
+import path from "path"
+dotenv.config({ path: path.resolve(process.cwd(), "config", ".dev.env") })
+export const serverConfig = {
   server: {
     proxy: {
       "/api": {
@@ -10,5 +10,5 @@ export const serverConfig={
         secure: false,
       },
     },
-  }
-};
+  },
+}

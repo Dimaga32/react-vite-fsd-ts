@@ -1,11 +1,11 @@
 {
-  "files": [],
   "compilerOptions": {
     "esModuleInterop": true,
+    "strictNullChecks": true
   },
-  "include": ["/src","/server"],
+  "include": ["src", "server", "config", "tailwind.config.ts"],
   "references": [
-    { "path": "./config/tsconfig.app.json"},
-    { "path": "./config/tsconfig.node.json"}
+    { "path": "./config/tsconfig.app.json" },
+    { "path": "./config/tsconfig.node.json" }
   ]
 }

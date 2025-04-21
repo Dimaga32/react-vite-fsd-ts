@@ -9,10 +9,10 @@
   ],
   "scripts": {
     "dev": "vite --config ./config/vite.config.ts",
-    "build": "../node_modules/.bin/tsc -b && vite build",
-    "lint": "../node_modules/.bin/eslint .",
-    "format": "../node_modules/.bin/prettier --write .",
-    "preview": "../node_modules/.bin/vite preview",
+    "build": "tsc -b && vite build",
+    "lint": "eslint .",
+    "format": "prettier --write .",
+    "preview": "vite preview",
     "decor": " npm run format && npm run lint"
   },
   "dependencies": {

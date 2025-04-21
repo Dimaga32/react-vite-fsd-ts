@@ -1,3 +1,3 @@
 export type TypeBooks = {
-  id: number;
-};
+  id: number
+}

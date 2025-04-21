@@ -1,8 +1,8 @@
-import Router from "./Routers/Router.tsx";
-import { JSX } from "react";
+import Router from "./Routers/Router.tsx"
+import { JSX } from "react"
 
 function App(): JSX.Element {
-  return <Router />;
+  return <Router />
 }
 
-export default App;
+export default App

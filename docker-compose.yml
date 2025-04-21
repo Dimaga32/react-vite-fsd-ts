@@ -1,4 +1,4 @@
-version: '3.8'
+version: "3.8"
 
 services:
   frontend:
@@ -40,7 +40,6 @@ services:
       - pgdata:/var/lib/postgresql/data
       - ./backup.sql:/docker-entrypoint-initdb.d/backup.sql
 
-
   pgadmin:
     image: dpage/pgadmin4
     restart: always
@@ -56,4 +55,3 @@ services:
 
 volumes:
   pgdata:
-
