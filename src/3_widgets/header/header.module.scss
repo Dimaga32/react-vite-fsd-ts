@@ -2,6 +2,10 @@ body .header {
   display: grid;
   grid-template-columns: 1fr 3fr 1fr;
   align-items: center;
+  .hider{
+    text-align: center;
+    display: flex;
+  }
 }
 
 @media (max-width: 1200px) {
