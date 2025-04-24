@@ -1,5 +1,4 @@
 # React+Vite+TS+FSD
-[![Build Status](https://github.com/Dimaga32/react-vite-fsd-ts/actions/workflows/ci.yml/badge.svg)](https://github.com/Dimaga32/react-vite-fsd-ts/actions)
 [![License](https://img.shields.io/github/license/Dimaga32/react-vite-fsd-ts.svg)](https://github.com/Dimaga32/react-vite-fsd-ts/blob/main/LICENSE)
 [![Issues](https://img.shields.io/github/issues/Dimaga32/react-vite-fsd-ts.svg)](https://github.com/Dimaga32/react-vite-fsd-ts/issues)
 ## О проекте
