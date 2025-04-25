@@ -12,9 +12,7 @@ export default function HeaderContent(): JSX.Element {
     <header
       className={`${classes.header} text-2xl text-white bg-[#1356a5] pr-[2vw] pl-[2vw] fixed w-[100vw]`}
     >
-      <div>
-        test
-      </div>
+      <div>test</div>
       <div className="text-center ml-6">
         <Icon
           className={`bg-[#1356a5] h-[12vh] ${classes.logo}`}
