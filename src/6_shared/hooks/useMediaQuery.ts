@@ -10,7 +10,6 @@ const breakpoints: Record<string, string> = {
 }
 
 export function useBreakpointMatch(size: string | undefined): boolean {
-  if (typeof size === "string") return true
   const query: string = breakpoints[size ?? "default"]
   const [matches, setMatches] = useState<boolean>(
     (): boolean => window.matchMedia(query).matches
