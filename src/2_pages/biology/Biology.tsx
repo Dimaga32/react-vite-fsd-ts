@@ -6,9 +6,9 @@ export default function BiologyContent(): JSX.Element {
   return (
     <div className={classes.mainBlock}>
       <Header />
-        <h1 className={`text-6xl text font-bold ` + classes.contentBlock}>
-            Biology
-        </h1>
+      <h1 className={`text-6xl text font-bold ` + classes.contentBlock}>
+        Biology
+      </h1>
       <Footer />
     </div>
   )

@@ -6,9 +6,9 @@ export default function BooksContent(): JSX.Element {
   return (
     <div className={classes.mainBlock}>
       <Header />
-        <h1 className={`text-6xl text font-bold ` + classes.contentBlock}>
-            Anatomy
-        </h1>
+      <h1 className={`text-6xl text font-bold ` + classes.contentBlock}>
+        Anatomy
+      </h1>
       <Footer />
     </div>
   )

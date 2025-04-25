@@ -1,3 +1,3 @@
-export function useMockIsRegistered():boolean {
-    return true
+export function useMockIsRegistered(): boolean {
+  return true
 }

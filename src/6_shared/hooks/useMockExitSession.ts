@@ -1,3 +1,3 @@
-export function useMockExitSession():boolean {
-    return false
+export function useMockExitSession(): boolean {
+  return false
 }
