@@ -7,7 +7,7 @@
 При небольших модификациях может быть реорганизован для относительно крупных проектов.
 ## Стек
 React, Vite, TS, Redux, RTK Query, Tailwind, Express, PostgreSQL,
-## Функционал / Маршрутный лист
+## Маршрутный лист
 ### - [x] Настройка роутеризации фронтенда
 ### - [x] Настройка окружения
 ### - [x] Создание базового UI
@@ -15,7 +15,7 @@ React, Vite, TS, Redux, RTK Query, Tailwind, Express, PostgreSQL,
 ### - [ ] Создание и настройка базы данных
 ### - [ ] Тесты и документация
 ## Архитектура
- - [config](./config)  
+   - [config](./config)  
   Папка config содержит конфигурационные файлы, а также переменные окружения
    - [public](./public)  
   Папка public предназначена для jpg, png, svg и подобных файлов
@@ -23,7 +23,7 @@ React, Vite, TS, Redux, RTK Query, Tailwind, Express, PostgreSQL,
   Папка db предназначена для файлов, связанных с инициализацией базы данных
    - [server](./server)  
   Папка server содержит папки:
-   - [routers](./server/routers) — хранит роутеризацию сервера
+    - [routers](./server/routers) — хранит роутеризацию сервера
     - [middlewares](./server/middlewares) — хранит мидлвары
     - [controllers](./server/controllers) — хранит контроллеры — функции, вызывающиеся при запросе на url роутера
     - [models](./server/models) — хранит модели — функции вызова к базе данных
@@ -37,6 +37,7 @@ npm install
 npm run dev
 ``` 
 ### Впоследствии планируется
+Требуется установленный Docker и docker-compose
 ```
 git pull https://github.com/Dimaga32/react-vite-fsd-ts .
 docker-compose up --build 
