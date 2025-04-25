@@ -8,13 +8,13 @@
     "server"
   ],
   "scripts": {
-    "postinstall": "husky install",
     "dev": "vite --config ./config/vite.config.ts",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "format": "prettier --write .",
     "preview": "vite preview",
-    "decor": " npm run format && npm run lint"
+    "decor": " npm run format && npm run lint",
+    "prepare": "husky"
   },
   "dependencies": {
     "@types/lodash.merge": "^4.6.9",
