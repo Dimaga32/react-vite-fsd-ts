@@ -3,16 +3,15 @@ import classes from "./header.module.scss"
 import Icon from "../../6_shared/UI/icon"
 import MyButton from "../../6_shared/UI/button"
 import MyHideBlock from "../../6_shared/UI/MyHideBlock"
-import { FaBars } from "react-icons/fa"
+import { FaBars, FaRegUser, FaSignOutAlt } from "react-icons/fa"
 import { useMockIsRegistered } from "../../6_shared/hooks/useMockIsRegistered"
 
 export default function HeaderContent(): JSX.Element {
   const isRegistered = !useMockIsRegistered()
   return (
     <header
-      className={`${classes.header} text-2xl text-white bg-[#1356a5] pr-[2vw] pl-[2vw] fixed w-[100vw]`}
+      className={`${classes.header} text-2xl text-white bg-[#1356a5] pr-[2vw] pl-[2vw] fixed !w-[100vw]`}
     >
-      <div>test</div>
       <div className="text-center ml-6">
         <Icon
           className={`bg-[#1356a5] h-[12vh] ${classes.logo}`}
@@ -69,8 +68,12 @@ export default function HeaderContent(): JSX.Element {
       <div className="flex justify-around items-center relative h-[100%]">
         {isRegistered ? (
           <>
-            <Icon className={`w-[40%] block`}>1</Icon>
-            <Icon className={`w-[40%] block`}>2</Icon>
+            <Icon className={`w-[40%] block`}>
+              <FaRegUser size={30} />
+            </Icon>
+            <Icon className={`w-[40%] block`}>
+              <FaSignOutAlt size={30} />
+            </Icon>
           </>
         ) : (
           <MyButton

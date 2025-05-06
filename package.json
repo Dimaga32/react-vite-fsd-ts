@@ -26,6 +26,7 @@
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^8.26.1",
+    "@welldone-software/why-did-you-render": "^10.0.1",
     "eslint": "^9.20.1",
     "eslint-config-google": "^0.14.0",
     "eslint-config-prettier": "^10.1.1",

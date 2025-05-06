@@ -2,7 +2,7 @@ import { JSX } from "react"
 import IconContent from "./HideBlock"
 
 export default function Icon(props: {
-  children?: string
+  children?: React.ReactNode
   className?: string
   href?: string
   src?: string
