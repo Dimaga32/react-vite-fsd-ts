@@ -4,7 +4,7 @@ COPY public ./public/
 COPY package.json package-lock.json ./
 COPY src/ ./src/
 COPY ./config ./config/
-RUN npm install
+RUN npm install --legacy-peer-deps
 RUN npm run build:frontend
 EXPOSE 3000
 CMD ["npm", "run", "preview", "--", "--host", "0.0.0.0", "--port", "3000"]

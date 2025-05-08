@@ -9,7 +9,7 @@ export default function MyButtonContent({
 }): JSX.Element {
   if (width !== undefined) {
     return (
-      <a href= "/form">
+      <a href="/form">
         <Button
           variant="contained"
           sx={{

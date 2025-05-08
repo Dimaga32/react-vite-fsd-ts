@@ -8,8 +8,8 @@ services:
       - "3000:3000"
     command: npm run preview -- --host --port 3000
     environment:
-      - backend_url=http://backend:5000
-      - frontend_url=http://frontend:3000
+      - http://158.160.116.75:5000
+      - http://158.160.116.75:3000
 
   backend:
     image: tz-backend
