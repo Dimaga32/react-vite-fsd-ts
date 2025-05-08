@@ -52,7 +52,7 @@ React + Vite + TypeScript + Tailwind + Express и архитектуры FSD.
 Требуется установленный Node.js
 
 ```
-git clone -b TestTask --single-branch https://github.com/Dimaga32/react-vite-fsd-ts.git .
+git clone -b CAD_Test_Task --single-branch https://github.com/Dimaga32/react-vite-fsd-ts.git .
 npm install
 npm run dev
 ```
@@ -62,13 +62,14 @@ npm run dev
 Требуется установленные Docker и docker-compose
 
 ```
-git clone -b TestTask --single-branch https://github.com/Dimaga32/react-vite-fsd-ts.git .
+git clone -b CAD_Test_Task --single-branch https://github.com/Dimaga32/react-vite-fsd-ts.git .
 docker-compose up --build
 ```
 
 ### 3. Онлайн-деплой
 
-[Открыть приложение](https://your-deployed-url.com)
+
+[Открыть приложение](http://158.160.116.75:3000/)
 
 ## Вклады и баги
 

@@ -1,5 +1,6 @@
 services:
   frontend:
+    image: tz-frontend
     build:
       context: .
       dockerfile: config/docker.frontend
@@ -11,6 +12,7 @@ services:
       - frontend_url=http://frontend:3000
 
   backend:
+    image: tz-backend
     build:
       context: .
       dockerfile: config/docker.backend

@@ -9,7 +9,7 @@ export default function MyButtonContent({
 }): JSX.Element {
   if (width !== undefined) {
     return (
-      <a href={import.meta.env.FRONTEND_URL + "/form"}>
+      <a href= "/form">
         <Button
           variant="contained"
           sx={{
@@ -35,7 +35,7 @@ export default function MyButtonContent({
   }
 
   return (
-    <a href={import.meta.env.FRONTEND_URL + "/form"}>
+    <a href="/form">
       <Button
         variant="contained"
         sx={{
