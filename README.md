@@ -76,6 +76,5 @@ docker-compose up --build
 
 ## Автор
 
-### Dimaga32
-📧 sinitsin.dmitry2013@yandex.ru  
+Dimaga32 📧 sinitsin.dmitry2013@yandex.ru  
 [GitHub](https://github.com/Dimaga32)
