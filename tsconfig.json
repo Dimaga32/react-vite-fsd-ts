@@ -3,7 +3,7 @@
     "esModuleInterop": true,
     "strictNullChecks": true
   },
-  "include": ["src", "server", "config", "tailwind.config.ts"],
+  "include": ["src", "server", "tailwind.config.ts", "config/*.ts"],
   "references": [
     { "path": "./config/tsconfig.app.json" },
     { "path": "./config/tsconfig.node.json" }

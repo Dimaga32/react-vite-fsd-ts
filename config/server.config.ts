@@ -5,7 +5,7 @@ export const serverConfig = {
   server: {
     proxy: {
       "/api": {
-        target: `${process.env.backendurl}${process.env.backend_port}`,
+        target: `process.env.backendurl`,
         changeOrigin: true,
         secure: false,
       },

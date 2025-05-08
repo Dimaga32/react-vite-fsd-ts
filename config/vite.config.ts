@@ -10,12 +10,19 @@ export default defineConfig(
     root: "src",
     publicDir: "../public",
     define: {
-      "import.meta.env.SERVER_PORT": JSON.stringify(process.env.server_port),
-      "import.meta.env.SERVER_URL": JSON.stringify(process.env.server_url),
+      "import.meta.env.SERVER_PORT": JSON.stringify(process.env.backend_port),
+      "import.meta.env.SERVER_URL": JSON.stringify(process.env.backend_url),
       "import.meta.env.FRONTEND_PORT": JSON.stringify(
         process.env.frontend_port
       ),
       "import.meta.env.FRONTEND_URL": JSON.stringify(process.env.frontend_url),
+    },
+    build: {
+      outDir: "../dist", // собрать в корень проекта, не в src
+      emptyOutDir: true,
+      rollupOptions: {
+        input: path.resolve(__dirname, "../src/index.html"),
+      },
     },
   })
 )

@@ -1,44 +1,40 @@
-import classes from "./footer.module.scss"
+import styled from "@emotion/styled"
 import { JSX } from "react"
-export default function FooterContent(): JSX.Element {
+
+const Footer = styled.footer`
+  display: flex;
+  flex-direction: column;
+  margin-top: 5rem;
+  justify-content: center;
+  align-items: center;
+`
+
+const FooterText = styled.span`
+  font-family: serif;
+  font-weight: 700;
+  font-size: 1.25rem; /* text-xl */
+  margin-bottom: 5rem;
+
+  @media (min-width: 640px) {
+    font-size: 1.5rem; /* sm:text-2xl */
+  }
+`
+
+const DownDiv = styled.div`
+  width: 100%;
+  height: 7.5rem; /* h-30 */
+  background-color: rgb(44, 44, 44);
+`
+
+export default function FooterContent({
+  IsDownDiv = true,
+}: {
+  IsDownDiv?: boolean
+}): JSX.Element {
   return (
-    <footer className={`${classes.footer} text-white`}>
-      <article className=" flex justify-around wrap-anywhere">
-        <div className="items-center flex flex-col w-[25%]">
-          <h5 className="text-center mb-2 ">Направления</h5>
-          <hr className="w-[75%]  align-middle mx-auto border-t border-white border-[2px] opacity-40 mb-2" />
-          <div className="flex wrap-anywhere justify-around w-full pr-8 pl-8">
-            <a href="">Анатомия</a>
-            <a href="">Гистология</a>
-          </div>
-        </div>
-        <div className="items-center flex flex-col text-white w-[25%]">
-          <h5 className="text-center mb-2">О нас</h5>
-          <hr className="w-[75%] align-middle mx-auto border-t border-white border-[2px] opacity-40 mb-2" />
-          <a href="" className="w-[60%] text-center">
-            Раздел находится в разработке
-          </a>
-        </div>
-        <div className="items-center flex flex-col text-white w-[25%]">
-          <h5 className="text-center mb-2 ">Проекты</h5>
-          <hr className="w-[75%]  align-middle mx-auto border-t border-white border-[2px] opacity-40 mb-2" />
-          <a href="">Отзывы</a>
-        </div>
-        <div className="items-center flex flex-col text-white w-[25%]">
-          <h5 className="text-center mb-2 ">Сотрудничество</h5>
-          <hr className="w-[75%]  align-middle mx-auto border-t border-white border-[2px] opacity-40 mb-2" />
-          <a href="">Контакты</a>
-        </div>
-      </article>
-      <article className="ml-[3.125%]">
-        <pre>
-          {`Есть вопросы или предложения?
-Напишите нам на почту:
-samedov_n_sh@staff.sechenov.ru`}
-        </pre>
-      </article>
-      <hr className="w-[93.75%]  align-middle mx-auto border-t border-white border-[2px] opacity-40 mt-8 mb-8" />
-      <article className="ml-[3.125%]">1</article>
-    </footer>
+    <Footer>
+      <FooterText>Some Company 2024</FooterText>
+      {IsDownDiv && <DownDiv />}
+    </Footer>
   )
 }

@@ -2,6 +2,7 @@ import react from "@vitejs/plugin-react"
 import dotenv from "dotenv"
 import path from "path"
 import tailwindcss from "@tailwindcss/vite"
+import dts from "vite-plugin-sass-dts"
 dotenv.config({ path: path.resolve(process.cwd(), "config", ".dev.env") })
 
 export const frontEndConfig = {
@@ -10,11 +11,17 @@ export const frontEndConfig = {
     open: true,
     proxy: {
       "/api": {
-        target: `${process.env.backendurl}${process.env.backend_port}`,
+        target: process.env.backendurl,
         changeOrigin: true,
         secure: false,
       },
     },
   },
-  plugins: [react(), tailwindcss()],
+  plugins: [
+    react(),
+    tailwindcss(),
+    dts({
+      enabledMode: ["development", "production"],
+    }),
+  ],
 }
